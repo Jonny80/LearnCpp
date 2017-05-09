@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/ecg_tree.dir/node.cpp.o  -o ecg_tree 
