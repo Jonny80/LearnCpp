@@ -123,6 +123,33 @@ ecg_tree/fast:
 	$(MAKE) -f CMakeFiles/ecg_tree.dir/build.make CMakeFiles/ecg_tree.dir/build
 .PHONY : ecg_tree/fast
 
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/ecg_tree.dir/build.make CMakeFiles/ecg_tree.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/ecg_tree.dir/build.make CMakeFiles/ecg_tree.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/ecg_tree.dir/build.make CMakeFiles/ecg_tree.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 node.o: node.cpp.o
 
 .PHONY : node.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ecg_tree"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... node.o"
 	@echo "... node.i"
 	@echo "... node.s"

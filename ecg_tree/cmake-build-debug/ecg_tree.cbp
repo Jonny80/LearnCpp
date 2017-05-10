@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/jonny/Dokumente/Uni/ECG/ecg_tree/main.cpp">
+			<Option target="ecg_tree"/>
+		</Unit>
 		<Unit filename="/home/jonny/Dokumente/Uni/ECG/ecg_tree/node.cpp">
 			<Option target="ecg_tree"/>
 		</Unit>
