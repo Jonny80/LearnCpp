@@ -1,7 +1,6 @@
 #include <iostream>
-#include "main.h"
-
-using namespace std;
+#include <cstdlib>
+#include <string>
 
 int main() {
     std::cout << "Hello, World!" << std::endl;

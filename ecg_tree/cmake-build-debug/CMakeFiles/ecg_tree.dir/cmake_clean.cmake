@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ecg_tree.dir/node.cpp.o"
   "CMakeFiles/ecg_tree.dir/main.cpp.o"
+  "CMakeFiles/ecg_tree.dir/node.cpp.o"
   "ecg_tree.pdb"
   "ecg_tree"
 )

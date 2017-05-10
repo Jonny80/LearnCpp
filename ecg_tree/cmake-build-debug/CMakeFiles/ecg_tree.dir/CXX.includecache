@@ -6,7 +6,29 @@
 
 #IncludeRegexTransform: 
 
+/home/jonny/Dokumente/Uni/ECG/ecg_tree/main.cpp
+iostream
+-
+cstdlib
+-
+node.cpp
 /home/jonny/Dokumente/Uni/ECG/ecg_tree/node.cpp
+string
+-
+
+/home/jonny/Dokumente/Uni/ECG/ecg_tree/node.cpp
+node.h
+/home/jonny/Dokumente/Uni/ECG/ecg_tree/node.h
+iostream
+-
+string
+-
+cstdlib
+-
+
+/home/jonny/Dokumente/Uni/ECG/ecg_tree/node.h
+string
+-
 iostream
 -
 

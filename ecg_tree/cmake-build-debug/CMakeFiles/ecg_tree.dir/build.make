@@ -57,33 +57,9 @@ include CMakeFiles/ecg_tree.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ecg_tree.dir/flags.make
 
-CMakeFiles/ecg_tree.dir/node.cpp.o: CMakeFiles/ecg_tree.dir/flags.make
-CMakeFiles/ecg_tree.dir/node.cpp.o: ../node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonny/Dokumente/Uni/ECG/ecg_tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ecg_tree.dir/node.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ecg_tree.dir/node.cpp.o -c /home/jonny/Dokumente/Uni/ECG/ecg_tree/node.cpp
-
-CMakeFiles/ecg_tree.dir/node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ecg_tree.dir/node.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonny/Dokumente/Uni/ECG/ecg_tree/node.cpp > CMakeFiles/ecg_tree.dir/node.cpp.i
-
-CMakeFiles/ecg_tree.dir/node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ecg_tree.dir/node.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonny/Dokumente/Uni/ECG/ecg_tree/node.cpp -o CMakeFiles/ecg_tree.dir/node.cpp.s
-
-CMakeFiles/ecg_tree.dir/node.cpp.o.requires:
-
-.PHONY : CMakeFiles/ecg_tree.dir/node.cpp.o.requires
-
-CMakeFiles/ecg_tree.dir/node.cpp.o.provides: CMakeFiles/ecg_tree.dir/node.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ecg_tree.dir/build.make CMakeFiles/ecg_tree.dir/node.cpp.o.provides.build
-.PHONY : CMakeFiles/ecg_tree.dir/node.cpp.o.provides
-
-CMakeFiles/ecg_tree.dir/node.cpp.o.provides.build: CMakeFiles/ecg_tree.dir/node.cpp.o
-
-
 CMakeFiles/ecg_tree.dir/main.cpp.o: CMakeFiles/ecg_tree.dir/flags.make
 CMakeFiles/ecg_tree.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonny/Dokumente/Uni/ECG/ecg_tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ecg_tree.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonny/Dokumente/Uni/ECG/ecg_tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ecg_tree.dir/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ecg_tree.dir/main.cpp.o -c /home/jonny/Dokumente/Uni/ECG/ecg_tree/main.cpp
 
 CMakeFiles/ecg_tree.dir/main.cpp.i: cmake_force
@@ -105,16 +81,40 @@ CMakeFiles/ecg_tree.dir/main.cpp.o.provides: CMakeFiles/ecg_tree.dir/main.cpp.o.
 CMakeFiles/ecg_tree.dir/main.cpp.o.provides.build: CMakeFiles/ecg_tree.dir/main.cpp.o
 
 
+CMakeFiles/ecg_tree.dir/node.cpp.o: CMakeFiles/ecg_tree.dir/flags.make
+CMakeFiles/ecg_tree.dir/node.cpp.o: ../node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonny/Dokumente/Uni/ECG/ecg_tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ecg_tree.dir/node.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ecg_tree.dir/node.cpp.o -c /home/jonny/Dokumente/Uni/ECG/ecg_tree/node.cpp
+
+CMakeFiles/ecg_tree.dir/node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ecg_tree.dir/node.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonny/Dokumente/Uni/ECG/ecg_tree/node.cpp > CMakeFiles/ecg_tree.dir/node.cpp.i
+
+CMakeFiles/ecg_tree.dir/node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ecg_tree.dir/node.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonny/Dokumente/Uni/ECG/ecg_tree/node.cpp -o CMakeFiles/ecg_tree.dir/node.cpp.s
+
+CMakeFiles/ecg_tree.dir/node.cpp.o.requires:
+
+.PHONY : CMakeFiles/ecg_tree.dir/node.cpp.o.requires
+
+CMakeFiles/ecg_tree.dir/node.cpp.o.provides: CMakeFiles/ecg_tree.dir/node.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ecg_tree.dir/build.make CMakeFiles/ecg_tree.dir/node.cpp.o.provides.build
+.PHONY : CMakeFiles/ecg_tree.dir/node.cpp.o.provides
+
+CMakeFiles/ecg_tree.dir/node.cpp.o.provides.build: CMakeFiles/ecg_tree.dir/node.cpp.o
+
+
 # Object files for target ecg_tree
 ecg_tree_OBJECTS = \
-"CMakeFiles/ecg_tree.dir/node.cpp.o" \
-"CMakeFiles/ecg_tree.dir/main.cpp.o"
+"CMakeFiles/ecg_tree.dir/main.cpp.o" \
+"CMakeFiles/ecg_tree.dir/node.cpp.o"
 
 # External object files for target ecg_tree
 ecg_tree_EXTERNAL_OBJECTS =
 
-ecg_tree: CMakeFiles/ecg_tree.dir/node.cpp.o
 ecg_tree: CMakeFiles/ecg_tree.dir/main.cpp.o
+ecg_tree: CMakeFiles/ecg_tree.dir/node.cpp.o
 ecg_tree: CMakeFiles/ecg_tree.dir/build.make
 ecg_tree: CMakeFiles/ecg_tree.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jonny/Dokumente/Uni/ECG/ecg_tree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ecg_tree"
@@ -125,8 +125,8 @@ CMakeFiles/ecg_tree.dir/build: ecg_tree
 
 .PHONY : CMakeFiles/ecg_tree.dir/build
 
-CMakeFiles/ecg_tree.dir/requires: CMakeFiles/ecg_tree.dir/node.cpp.o.requires
 CMakeFiles/ecg_tree.dir/requires: CMakeFiles/ecg_tree.dir/main.cpp.o.requires
+CMakeFiles/ecg_tree.dir/requires: CMakeFiles/ecg_tree.dir/node.cpp.o.requires
 
 .PHONY : CMakeFiles/ecg_tree.dir/requires
 
