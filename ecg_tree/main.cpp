@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    int TreeKeys[10] = {50, 76, 21, 4, 5, 2, 5, 7, 2, 1};
+    int TreeKeys[12] = {50, 76, 21, 4, 15, 5, 7, 2, 1234, 345345, 123123};
 
     node myTree;
 
@@ -14,11 +14,13 @@ int main() {
 
     myTree.PrintInOrder();
 
-    for (int a = 0; a < sizeof(TreeKeys) / sizeof(TreeKeys[0]); a++) {
+    for (int a = 0; a < 12; a++) {
         myTree.Add_child(TreeKeys[a]);
     }
 
     cout << "Printing the Tree in order\nAfter adding numbers\n";
+    cout << sizeof(TreeKeys) / sizeof(TreeKeys[0]) << endl;
+
 
     myTree.PrintInOrder();
 
