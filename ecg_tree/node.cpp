@@ -48,3 +48,21 @@ void node::Add_child_Private(int key, node::knoten *Ptr) {
         cout << "The key " << key << " has already been added to the tree\n";
     }
 }
+
+void node::PrintInOrder() {
+    PrintInOrderPrivate(root);
+}
+
+void node::PrintInOrderPrivate(knoten *Ptr) {
+    if (root != NULL) {
+        if (Ptr->left != NULL) {
+            PrintInOrderPrivate(Ptr->left);
+        }
+        cout << Ptr->key << " ";
+        if (Ptr->right != NULL) {
+            PrintInOrderPrivate(Ptr->right);
+        }
+    } else {
+        cout << "The Tree is empty\n";
+    }
+}

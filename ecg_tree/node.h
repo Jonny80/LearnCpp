@@ -15,10 +15,14 @@ private:
     };
     knoten* root;
     void Add_child_Private(int key,knoten* Ptr);
+
+    void PrintInOrderPrivate(knoten *Ptr);
 public:
     node();
     knoten* Create_child(int key);
     void Add_child(int key);
+
+    void PrintInOrder();
 };
 
 
