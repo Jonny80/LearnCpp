@@ -1,26 +1,24 @@
 #include <iostream>
 #include <cstdlib>
 #include <string>
+#include <thread>
+#include <unistd.h>
 #include "node.h"
 
 using namespace std;
 
 int main() {
-    int TreeKeys[12] = {50, 76, 21, 4, 15, 5, 7, 2, 1234, 345345, 123123};
+    int TreeKeys[12] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 68, 66};
 
     node myTree;
 
     cout << "Printing the Tree in order\nBefore adding numbers\n";
 
-    myTree.PrintInOrder();
-
-    for (int a = 0; a < 12; a++) {
-        myTree.Add_child(TreeKeys[a]);
+    for (int i = 0; i < sizeof(TreeKeys) / sizeof(TreeKeys[0]); ++i) {
+        myTree.Add_child(TreeKeys[i]);
     }
 
     cout << "Printing the Tree in order\nAfter adding numbers\n";
-    cout << sizeof(TreeKeys) / sizeof(TreeKeys[0]) << endl;
-
 
     myTree.PrintInOrder();
 
