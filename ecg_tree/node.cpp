@@ -38,7 +38,7 @@ void node::Add_child_Private(int key, node::knoten *Ptr) {
             Ptr->left = Create_child(key);
         }
     }else if (key > Ptr->key){
-        if (Ptr->right != NULL) {
+        if (Ptr->right != NULL){
             Add_child_Private(key,Ptr->right);
         }
         else{

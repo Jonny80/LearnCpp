@@ -1,7 +1,6 @@
 //
 // Created by jonny on 10.05.17.
 //
-
 #ifndef NODE_H_
 #define NODE_H_
 
@@ -21,7 +20,6 @@ public:
     node();
     knoten* Create_child(int key);
     void Add_child(int key);
-
     void PrintInOrder();
 };
 

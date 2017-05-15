@@ -10,6 +10,8 @@ using namespace std;
 int main() {
     int TreeKeys[12] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 68, 66};
 
+    int TreeKeys2[2] = {1,2};
+
     node myTree;
 
     cout << "Printing the Tree in order\nBefore adding numbers\n";
