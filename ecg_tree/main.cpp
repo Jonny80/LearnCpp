@@ -8,9 +8,7 @@
 using namespace std;
 
 int main() {
-    int TreeKeys[12] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 68, 66};
-
-    int TreeKeys2[2] = {1,2};
+    int TreeKeys[12] = {2, 21, 23, 44, 25, 62, 73, 86, 9, 12, 68, 66};
 
     node myTree;
 
@@ -23,6 +21,8 @@ int main() {
     cout << "Printing the Tree in order\nAfter adding numbers\n";
 
     myTree.PrintInOrder();
+
+    cout << "\n" << "The smallest value in the Tree is " << myTree.FindSmallest();
 
     return 0;
 }
