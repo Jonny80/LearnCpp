@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jonny/Dokumente/Uni/ECG/ecg_tree/main.cpp
+/home/jonny/Dokumente/Uni/Semester 2/ECG/ecg_tree/main.cpp
 iostream
 -
 cstdlib
@@ -18,15 +18,15 @@ thread
 unistd.h
 -
 node.h
-/home/jonny/Dokumente/Uni/ECG/ecg_tree/node.h
+/home/jonny/Dokumente/Uni/Semester 2/ECG/ecg_tree/node.h
 
-/home/jonny/Dokumente/Uni/ECG/ecg_tree/node.cpp
+/home/jonny/Dokumente/Uni/Semester 2/ECG/ecg_tree/node.cpp
 node.h
-/home/jonny/Dokumente/Uni/ECG/ecg_tree/node.h
+/home/jonny/Dokumente/Uni/Semester 2/ECG/ecg_tree/node.h
 string
 -
 iostream
 -
 
-/home/jonny/Dokumente/Uni/ECG/ecg_tree/node.h
+/home/jonny/Dokumente/Uni/Semester 2/ECG/ecg_tree/node.h
 

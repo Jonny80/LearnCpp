@@ -113,7 +113,7 @@ void node::PrintChildren(int key) {
 }
 
 int node::FindSmallest() {
-    return FindSmallestPrivate(root);
+    return FindSmallestPrivate(root);-
 }
 
 int node::FindSmallestPrivate(node::knoten *Ptr) {
