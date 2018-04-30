@@ -21,8 +21,13 @@ int main() {
     cout << "Printing the Tree in order\nAfter adding numbers\n";
 
     myTree.PrintInOrder();
+    myTree.PrintChildren(44);
 
-    cout << "\n" << "The smallest value in the Tree is " << myTree.FindSmallest();
+
+    cout << "\n" << "The smallest value in the Tree is " << myTree.FindSmallest()<<"\n";
+
+    cout << TreeKeys[11];
+
 
     return 0;
 }

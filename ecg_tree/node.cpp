@@ -113,7 +113,7 @@ void node::PrintChildren(int key) {
 }
 
 int node::FindSmallest() {
-    return FindSmallestPrivate(root);-
+    return FindSmallestPrivate(root);
 }
 
 int node::FindSmallestPrivate(node::knoten *Ptr) {
@@ -137,16 +137,16 @@ void node::RemoveNode(int key) {
 void node::RemoveNodePrivate(int key, knoten *parent) {
     if (root != NULL) {
         if (root->key == key) {
-            //RemoveMatch();
+            RemoveRootMatch();
         } else {
-            if (key > parent->key && parent->left != NULL) {
+            if (key < parent->key && parent->left != NULL) {
                 parent->left->key == key ?
-                //RemoveMatch(parent, parent->left, true);
-                //RemoveNodePrivate(key, parent->left);
+                RemoveMatch(parent, parent->left, true):
+                RemoveNodePrivate(key, parent->left);
             } else if (key > parent->key && parent->right != NULL) {
-                parent->left->key == key ?
-                //RemoveMatch(parent, parent->right, false);
-                //RemoveNodePrivate(key, parent->right);
+                parent->right->key == key ?
+                RemoveMatch(parent, parent->right, false):
+                RemoveNodePrivate(key, parent->right);
             } else {
                 cout << "The key " << key << " was not found in the Tree\n";
             }
@@ -188,6 +188,44 @@ void node::RemoveRootMatch() {
         cout << "Can not remove root. The tree is empty\n";
     }
 }
+
+void node::RemoveMatch(knoten* pKnoten,knoten* match, bool left) {
+    if (root != NULL){
+        knoten* delPtr;
+        int matchKey = match ->key;
+        int smallesInRightSubtree;
+
+        if (match->left == NULL && match->right == NULL){
+            delPtr = match;
+            left == true ? pKnoten->left = NULL : pKnoten->right = NULL;
+            delete delPtr;
+            cout <<"The node containing key " << matchKey << "was removed\n";
+        } else if(match->left == NULL && match ->right !=NULL) {
+            left == true ? pKnoten -> left = match -> right : pKnoten -> right = match -> right;
+            match->right =NULL;
+            delPtr = match;
+            delete  delPtr;
+            cout <<"The node containing key " << matchKey << "was removed\n";
+
+        }
+        else if(match->left != NULL && match ->right ==NULL) {
+        left == true ? pKnoten -> left = match -> left : pKnoten -> right = match -> left;
+        match->left =NULL;
+        delPtr = match;
+        delete  delPtr;
+        cout <<"The node containing key " << matchKey << "was removed\n";
+
+    }else{
+            smallesInRightSubtree = FindSmallestPrivate(match->right);
+            RemoveNodePrivate(smallesInRightSubtree,match);
+            match->key = smallesInRightSubtree;
+        }
+    } else{
+        cout <<"Can not remove match. The tree is emty\n";
+    }
+
+}
+
 
 
 
